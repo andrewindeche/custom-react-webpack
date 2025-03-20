@@ -1,31 +1,33 @@
 {
-  "name": "frontend",
+  "name": "reactapp",
   "version": "1.0.0",
-  "description": "a logger app for drivers",
+  "description": "custom react app",
   "main": "index.tsx",
   "scripts": {
     "start": "webpack serve --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack --config webpack.dev.js --watch",
+    "build:clean": "npm run clean && npm run build",
+    "clean": "rm -rf dist",
     "test": "npm run test",
     "format": "prettier --write .",
     "format-check": "prettier --check ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrewindeche/truck-driver-logger.git"
+    "url": "git+https://github.com/andrewindeche/custom-react-webpack.git"
   },
   "keywords": [
     "logger",
     "truck",
     "driver"
   ],
-  "author": "Andrew Indeche",
+  "author": "Andrew",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andrewindeche/truck-driver-logger/issues"
+    "url": "https://github.com/andrewindeche/custom-react-webpack/issues"
   },
-  "homepage": "https://github.com/andrewindeche/truck-driver-logger#readme",
+  "homepage": "https://github.com/andrewindeche/custom-react-webpack#readme",
   "devDependencies": {
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
