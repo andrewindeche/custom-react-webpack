@@ -1,6 +1,6 @@
-const { merge } = require("webpack-merge");
-const commonConfig = require("./webpack.config.js");
-const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const { merge } = require('webpack-merge');
+const commonConfig = require('./webpack.config.js');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = merge(commonConfig, {
   mode: 'development',
@@ -10,9 +10,7 @@ module.exports = merge(commonConfig, {
     port: 3000,
     hot: true,
   },
-  plugins: [
-    new ReactRefreshWebpackPlugin()
-  ],
+  plugins: [new ReactRefreshWebpackPlugin()],
   module: {
     rules: [
       {
