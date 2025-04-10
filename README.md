@@ -1,4 +1,4 @@
-The repository contains a custom react and webpack files built using tsx
+The repository contains custom react and webpack files built using tsx
 1.React
 2.Typescript
 3.Webpack
